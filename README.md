@@ -8,13 +8,14 @@
 
 ### Contents
 
-* [Info](https://github.com/odysseusmax/utube#info)
-* [Libraries Used](https://github.com/odysseusmax/utube#libraries-used)
-* [Setup](https://github.com/odysseusmax/utube#setup)
-* [Status](https://github.com/odysseusmax/utube#status)
-* [Special Notes](https://github.com/odysseusmax/utube#special-notes)
-* [Screenshots](https://github.com/odysseusmax/utube#screenshots)
-* [Contact](https://github.com/odysseusmax/utube#contact)
+* [Info](#info)
+* [Libraries Used](#libraries-used)
+* [Setup](#setup)
+* [Status](#status)
+* [Special Notes](#special-notes)
+* [Screenshots](#screenshots)
+* [Video Tutorial](#video-tutorial)
+* [Contact](#contact)
 
 ### Info
 
@@ -38,13 +39,13 @@ This is a simple hobby project which i was really curious about to impliment. Th
 **Clone and setup virtual environment**
 
 ``` bash
-git clone https://github.com/odysseusmax/utube.git
+$ git clone https://github.com/odysseusmax/utube.git
 
-cd utube
+$ cd utube
 
-virtualenv .
+$ virtualenv venv
 
-source bin/activate
+$ source venv/bin/activate
 
 ```
 
@@ -54,7 +55,7 @@ source bin/activate
 
 * Head to [Google console](https://console.developers.google.com "Google console"), create a new project named `Youtube Uploader` and enable `API'S AND SERVISES`. Search for `YOUTUBE DATA API v3` and enable the API. Go to [Credentials](https://console.developers.google.com/apis/credentials "Credentials") page, select your project `Youtube Uploader` create a new credential with `other` as type. Copy the `CLIENT_ID` and `CLIENT_SECRET` and paste them to `config.py`
 
-* Head to [Bot Father](https://t.me/BotFather "Bot FAther"), create new bot and paste the bot token to `BOT_TOKEN`
+* Head to [Bot Father](https://t.me/BotFather "Bot Father"), create new bot and paste the bot token to `BOT_TOKEN`
 
 * Paste the bot owner's Telegram id to `BOT_OWNER` and add `AUTH_USERS` if you need others to use your bot.
 
@@ -65,16 +66,16 @@ source bin/activate
 With all the above procedures done, its time to install our dependencies.
 Run :
 ```bash
-pip3 install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 **Run bot**
 
 Lets run our bot for the first time!
 ```bash
-python3 bot.py
+$ python3 bot.py
 ```
-If you did everything correctly, the bot should be running. Go do `/atart` to see if the bot is live or not. Follow the instructions provided by bot to setup authorisation and to start uploading.
+If you did everything correctly, the bot should be running. Go do `/start` to see if the bot is live or not. Follow the instructions provided by bot to setup authorisation and to start uploading.
 
 
 **Or the easy way of directly deploying to heroku**
@@ -98,16 +99,27 @@ This project is actively maintained and will continue so until I'm tired of it.
 ### Screenshots
 <p align="center">
 
-<img  width="25%" height="25%" src="https://github.com/odysseusmax/utube/blob/master/ss/overview.jpg">
+<img  width="25%" height="25%" src="./ss/overview.jpg">
 
-<img  width="25%" height="25%" src="https://github.com/odysseusmax/utube/blob/master/ss/bot-start.jpg">
+<img  width="25%" height="25%" src="./ss/bot-start.jpg">
 
-<img  width="25%" height="25%" src="https://github.com/odysseusmax/utube/blob/master/ss/bot-help.jpg">
+<img  width="25%" height="25%" src="./ss/bot-help.jpg">
 
-<img  width="25%" height="25%" src="https://github.com/odysseusmax/utube/blob/master/ss/bot-authorise.jpg">
+<img  width="25%" height="25%" src="./ss/bot-authorise.jpg">
 
-<img  width="25%" height="25%" alt="Upload" src="https://github.com/odysseusmax/utube/blob/master/ss/bot-upload.jpg">
+<img  width="25%" height="25%" alt="Upload" src="./ss/bot-upload.jpg">
 
+</p>
+
+### Video Tutorial
+
+<p align="center">
+           <a href="http://www.youtube.com/watch?feature=player_embedded&v=LSs8b5dMWIA" target="_blank">
+                      <img src="http://img.youtube.com/vi/LSs8b5dMWIA/hqdefault.jpg" alt="How To Make Telegram Bot For YouTube Videos Uploading" />
+           </a>
+</p>
+<p align="center">
+           <b>Video Tutorial</b>
 </p>
 
 ### Contact
